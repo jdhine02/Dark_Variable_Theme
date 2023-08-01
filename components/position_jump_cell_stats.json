@@ -28,7 +28,7 @@
                 {
                     "BlockType" : "image",
                     "RenderIf" : " {Item.PositionJump, Converter=NumberLess, Parameter=0}",
-                    "Source" : "arrow_down_black.png",
+                    "Source" : "arrow_down.png",
                     "HorizontalAlignment": "Center",
                     "VerticalAlignment" : "Center",
                     "Height" : 25                                                              
