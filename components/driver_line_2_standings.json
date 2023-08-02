@@ -23,6 +23,8 @@
             "Height": 86,
             "MarginTop": 0,
             "MarginBottom": 5,
+            "MarginLeft": 3,
+            "MarginRight": 3,
             "Items": [
                 //left part number
                 {
