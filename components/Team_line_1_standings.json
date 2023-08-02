@@ -14,10 +14,10 @@
                 }
             ],
             //"Padding": "5, 25, 20, 5",
-            "Width": 1180,
+            "Width": 1155,
             "Height": 172,
             "MarginTop": 0,
-            "MarginBottom": 5,
+            "MarginBottom": 10,
             "Items": [
                 //left part number
                 {

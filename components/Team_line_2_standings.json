@@ -14,10 +14,12 @@
                     "Value": "images/Modern/Row/reserve_dark.png"
                 }
             ],
-            "Width": 575,
+            "Width": 585,
             "Height": 86,
             "MarginTop": 0,
             "MarginBottom": 5,
+            "MarginRight": 3,
+            "MarginLeft": 3,
             "Items": [
                 //left part number
                 {
