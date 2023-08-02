@@ -27,7 +27,7 @@
                             "Foreground": "{WhiteText}",
                             "FontName": "{FontNameDefault}",
                             "FontSize": 15,
-                            "Source": "{Item.DateLocal, Converter=DateToTime}",
+                            "Source": "{Item.DateGmt, Converter=DateToTime}",
                             "HorizontalAlignment": "Center",
                             "VerticalAlignment": "Center",
                             "Triggers": [
@@ -35,8 +35,19 @@
                                     "Condition": "{Item.CompletedStatus, Converter=StringEquals, Parameter=Completed}",
                                     "Property": "Foreground",
                                     "Value": "{BlackText}"
+                                },
+                                {
+                                    "Condition" : "{RenderTimeGMT, Converter=BoolReverse}",
+                                    "Setters" : [
+                                        {
+                                            "Property" : "Source",
+                                            "Value" : "{Item.DateLocal, Converter=DateToTime}",
+                                        }
+                                    ]
+                                   
                                 }
-                            ]
+                            ],
+                            
                         },
                         {
                             "BlockType": "text",
