@@ -22,7 +22,7 @@
                     "Property" : "BackgroundImage",
                     "Value" : "images/lineup/card_two_driver.png"
                 }
-            ]
+            ],
         },
         {
             "Condition" : "{Season.SeatsPerTeam, Converter=NumberEquals, Parameter=3}",
@@ -73,6 +73,15 @@
                     "Property" : "BackgroundImage",
                     "Value" : "images/lineup/card_{Item.Team.Name}.png"
                 }
+            ]
+        },
+        {
+            "Condition" : "{HorizontalLineups}",
+            "Setters" : [
+                {
+                    "Property" : "MarginLeft",
+                    "Value" : "75"
+                },
             ]
         }
     ],
@@ -231,6 +240,7 @@
             "VerticalAlignment": "Bottom",
             "HorizontalAlignment": "Center"
         }
-    ]
+    ],
+
 }
 
