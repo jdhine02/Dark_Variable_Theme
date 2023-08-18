@@ -120,10 +120,11 @@
                                     "BlockType": "text",
                                     "Source": "[{Item.RaceType}]",
                                     "HorizontalAlignment": "Center",
-                                    "Foreground": "{WhiteText}",
+                                    "Foreground": "{BlackText}",
                                     "FontName": "{FontNameDefault}",
                                     "FontSize": 17,
                                     "RenderIf": "{Item.RaceType, converter=StringEquals, parameter=Sprint}",
+                                },
                                     "Triggers": [
                                         {
                                             "Condition": "{Item.CompletedStatus, Converter=StringEquals, Parameter=Completed}",
@@ -131,7 +132,6 @@
                                             "Value": "{BlackText}"
                                         }
                                     ]
-                                },
                             },
                         },
                         {
