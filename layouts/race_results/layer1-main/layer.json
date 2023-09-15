@@ -44,6 +44,7 @@
                             "Template": {
                                 "BlockType" : "component",                                
                                 "ComponentName" : "position_cell",
+                                "RenderForce": true,   
                                 "ComponentOptions" :{
                                     "Vars" :{
                                         "position" : "{Item.PositionString}"
@@ -57,7 +58,8 @@
                             "Template":
                             {
                                 "BlockType" : "component",
-                                "ComponentName" : "position_jump_cell_session"    
+                                "ComponentName" : "position_jump_cell_session",
+                                "RenderForce": true,      
                             }
                         },
                         //driver line
@@ -67,7 +69,8 @@
                             "Template":
                             {
                                 "BlockType" : "component",
-                                "ComponentName" : "driver_line_cell"                                
+                                "ComponentName" : "driver_line_cell",   
+                                "RenderForce": true,                                
                             }
                         },
                         //interval
@@ -80,6 +83,7 @@
                                 "BlockType": "text",
                                 "Source": "{Item.IntervalRace}",
                                 "HorizontalAlignment": "Left",
+                                "RenderForce": true,   
                                 "TextOptions": {
                                     "FontName": "{FontNameDefault}",
                                     "FontSize": 28,
@@ -118,12 +122,14 @@
                             "Template": {
                                 "BlockType": "dock",
                                 "Padding": "12, 0",
-                                "Background": "{CellBG}",
+                                "Background": "{CellBG}", 
+                                "RenderForce": true,                              
                                 "Items": [
                                     {
                                         "BlockType": "stack",
                                         "HorizontalAlignment": "Center",
-                                        "VerticalAlignment": "Center",
+                                        "VerticalAlignment": "Center",  
+                                        "RenderForce": true,                                      
                                         "Items": [
                                             {
                                                 "BlockType": "text",
@@ -164,9 +170,10 @@
                                 "Items": [
                                     {
                                         "BlockType": "text",
-                                        "Source": "   {Item.PenaltyPosStewards,Converter=NumberZeroToEmpty}   ",
+                                        "Source": "   {Item.PenaltyPosStewards,Converter=NumberZeroToEmpty}   ", 
                                         "HorizontalAlignment": "Center",
                                         "VerticalAlignment": "Center",
+                                        "RenderForce": true,   
                                         "TextOptions": {
                                                         "FontName": "{FontNameDefault}",
                                                         "FontSize": 28,
@@ -191,6 +198,7 @@
                                         "HorizontalAlignment": "Center",
                                         "VerticalAlignment": "Center",
                                         "Spacing": 8,
+                                        "RenderForce": true,   
                                         "Items": [
                                             {
                                                 "BlockType": "text",
@@ -269,6 +277,7 @@
                                         "VerticalAlignment": "Center",
                                         "MarginRight" : 4,
                                         "Spacing": 3,
+                                        "RenderForce": true,   
                                         "Items": [
                                             {
                                                 "BlockType": "image",
@@ -303,12 +312,14 @@
                                 "Padding": "24, 0",
                                 "Background": "{CellBG}",
                                 "HorizontalAlignment": "Center",
+                                "RenderForce": true,
                                 "Items": [
                                     {
                                         "BlockType": "text",
                                         "Source": "{Item.DriverPointsString}",
                                         "HorizontalAlignment": "Center",
                                         "VerticalAlignment": "Center",
+                                        "RenderForce": true,
                                         "TextOptions": {
                                             "FontName": "{FontNameDefault}",
                                             "FontSize": 32,  

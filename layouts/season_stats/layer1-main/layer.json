@@ -145,6 +145,7 @@
                                         "VerticalAlignment": "Center",
                                         "Foreground" : "{WhiteText}",
                                         "TextOptionsExtern": "primaryNumber",
+                                        "RenderForce": true, 
                                         "Triggers":
                                         [
                                             {
@@ -182,7 +183,7 @@
                                 "BlockType" : "component",
                                 "PaddingLeft" : 0,                               
                                 "PaddingRight" : 12,
-                                "ComponentName" : "points_gap"    
+                                "ComponentName" : "points_gap",    
                             }
                         },
 
@@ -717,6 +718,7 @@
                                         "Source": "{Item.PenaltyPointsActive, Converter=NumberZeroToEmpty}",
                                         "HorizontalAlignment": "Center",
                                         "VerticalAlignment": "Center",
+                                        "RenderForce": true, 
                                         "TextOptions": {
                                                         "FontName": "{FontNameDefault}",
                                                         "FontSize":40,

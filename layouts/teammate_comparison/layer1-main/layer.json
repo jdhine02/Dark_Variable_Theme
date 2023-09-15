@@ -39,17 +39,17 @@
                                 "Width" : 738, //1314,
                                 "BackgroundImage" : "images/lineup/card_{Item.Team.Name}.png",
                                 "Items" : [
-                                    {
-                                        "BlockType" : "text",
-                                        "Source" : "{Item.Team.Name}",
-                                        "HorizontalAlignment" : "Center",
-                                        "MarginTop" : 40,
-                                        "TextOptions" : {
-                                            "HorizontalAlignment" : "Center",
-                                            "FontSize" : "72",
-                                            "Foreground" : "#ffffff"
-                                        }
-                                    },
+                                   // {
+                                   //     "BlockType" : "text",
+                                    //    "Source" : "{Item.Team.Name}",
+                                     //   "HorizontalAlignment" : "Center",
+                                      //  "MarginTop" : 40,
+                                      //  "TextOptions" : {
+                                      //      "HorizontalAlignment" : "Center",
+                                      //      "FontSize" : "72",
+                                      //      "Foreground" : "#ffffff"
+                                      //  }
+                                  //  },
                                     {
                                         "BlockType" : "dock",
                                         "Orientation" : "Horizontal",
@@ -59,12 +59,13 @@
                                                 "Orientation" : "Vertical",
                                                 "HorizontalAlignment" : "Left",
                                                 "MarginLeft" : 30,
+                                                "MarginTop": 40,
                                                 "Items" : [
                                                     {
                                                         "BlockType" : "image",
                                                         "HorizontalAlignment" : "Center",
                                                         "Source" : "images/suit/{Item.Team.Name}_1.png",
-                                                        "Height" : 300,
+                                                        "Height" : 350,
                                                     },
                                                     {
                                                         "BlockType" : "text",
@@ -86,12 +87,13 @@
                                                 "Orientation" : "Vertical",
                                                 "HorizontalAlignment" : "Right",
                                                 "MarginRight" : 30,
+                                                "MarginTop": 40,
                                                 "Items" : [
                                                     {
                                                         "BlockType" : "image",
                                                         "HorizontalAlignment" : "Center",
                                                         "Source" : "images/suit/{Item.Team.Name}_2.png",
-                                                        "Height" : 300,
+                                                        "Height" : 350,
                                                     },
                                                     {
                                                         "BlockType" : "text",
@@ -113,7 +115,7 @@
                                     {
                                         "BlockType": "image",
                                         "Source" : "images/cars/{Item.Team.Name}.png",
-                                        "Height" : "120",
+                                        "Height" : "175",
                                         "HorizontalAlignment" : "Center"
                                     }
                                 ]

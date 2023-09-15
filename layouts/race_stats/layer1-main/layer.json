@@ -61,7 +61,8 @@
                             "Template":
                             {
                                 "BlockType" : "component",
-                                "ComponentName" : "driver_line_cell_stats"                                
+                                "ComponentName" : "driver_line_cell_stats",
+                                "RenderForce": true,                                   
                             }
                         },
                         //StartingPosition
@@ -158,7 +159,8 @@
                             "Template":
                             {
                                 "BlockType" : "component",
-                                "ComponentName" : "position_jump_cell_stats"                                
+                                "ComponentName" : "position_jump_cell_stats",
+                                "RenderForce": true,                                   
                             }
                         },
                         //points
@@ -180,6 +182,7 @@
                                         "Source": "{Item.DriverPointsString}",
                                         "HorizontalAlignment": "Center",
                                         "VerticalAlignment": "Center",
+                                        "RenderForce": true,   
                                         "TextOptions": {
                                             "FontName": "{FontNameDefault}",
                                             "FontSize": 32,     
@@ -228,6 +231,7 @@
                                 "BlockType": "text",
                                 "Source": "{Item.IntervalRace}",
                                 "HorizontalAlignment": "Left",
+                                "RenderForce": true,   
                                 "TextOptions": {
                                     "FontName": "{FontNameDefault}",
                                     "FontSize": 28,
@@ -271,6 +275,7 @@
                                 "BlockType": "text",
                                 "Source": "{Item.AbsoluteTime}",
                                 "HorizontalAlignment": "Left",
+                                "RenderForce": true,   
                                 "TextOptions": {
                                     "FontName": "{FontNameDefault}",
                                     "FontSize": 28,
@@ -314,6 +319,7 @@
                                 "BlockType": "text",
                                 "Source": "  {Item.LapsCount, Converter=NumberZeroToEmpty}  ",
                                 "HorizontalAlignment": "Left",
+                                "RenderForce": true,   
                                 "TextOptions": {
                                     "FontName": "{FontNameDefault}",
                                     "FontSize": 28,
@@ -357,6 +363,7 @@
                                 "BlockType": "text",
                                 "Source": "  {Item.LeadLaps, Converter=NumberZeroToEmpty}  ",
                                 "HorizontalAlignment": "Left",
+                                "RenderForce": true,   
                                 "TextOptions": {
                                     "FontName": "{FontNameDefault}",
                                     "FontSize": 28,
@@ -401,6 +408,7 @@
                                 "BlockType": "text",
                                 "Source": "  {Item.PitsCount, Converter=NumberZeroToEmpty}  ",
                                 "HorizontalAlignment": "Left",
+                                "RenderForce": true,   
                                 "TextOptions": {
                                     "FontName": "{FontNameDefault}",
                                     "FontSize": 28,
@@ -449,6 +457,7 @@
                                         "VerticalAlignment": "Center",
                                         "MarginRight" : 4,
                                         "Spacing": 3,
+                                        "RenderForce": true,   
                                         "Items": [
                                             {
                                                 "BlockType": "image",
@@ -516,6 +525,7 @@
                                         "HorizontalAlignment": "Center",
                                         "VerticalAlignment": "Center",
                                         "Spacing": 8,
+                                        "RenderForce": true,   
                                         "Items": [
                                             {
                                                 "BlockType": "text",
@@ -590,6 +600,7 @@
                                         "Source": "{Item.FastestLapNumLap}",
                                         "HorizontalAlignment": "Center",
                                         "VerticalAlignment": "Center",
+                                        "RenderForce": true,   
                                         "TextOptions": {
                                             "FontName": "{FontNameDefault}",
                                             "FontSize": 28,
@@ -648,6 +659,7 @@
                                         "HorizontalAlignment": "Center",
                                         "VerticalAlignment": "Center",
                                         "Spacing": 8,
+                                        "RenderForce": true,   
                                         "Items": [
                                             {
                                                 "BlockType": "text",
@@ -714,6 +726,7 @@
                                                 "HorizontalAlignment": "Center",
                                                 "VerticalAlignment": "Center",
                                                 "Spacing": 8,
+                                                "RenderForce": true,   
                                                 "Items": [
                                                     {
                                                         "BlockType": "text",
@@ -780,6 +793,7 @@
                                         "HorizontalAlignment": "Center",
                                         "VerticalAlignment": "Center",
                                         "Spacing": 8,
+                                        "RenderForce": true,   
                                         "Items": [
                                             {
                                                 "BlockType": "text",
@@ -847,6 +861,7 @@
                                         "Source": "{Item.OvertakesCount}",
                                         "HorizontalAlignment": "Center",
                                         "VerticalAlignment": "Center",
+                                        "RenderForce": true,   
                                         "TextOptions": {
                                             "FontName": "{FontNameDefault}",
                                             "FontSize": 28,
@@ -895,6 +910,7 @@
                                         "BlockType": "stack",
                                         "HorizontalAlignment": "Center",
                                         "VerticalAlignment": "Center",
+                                        "RenderForce": true,   
                                         "Items": [
                                             {
                                                 "BlockType": "text",
@@ -931,6 +947,7 @@
                                         "BlockType": "stack",
                                         "HorizontalAlignment": "Center",
                                         "VerticalAlignment": "Center",
+                                        "RenderForce": true,   
                                         "Items": [
                                             {
                                                 "BlockType": "text",
@@ -967,6 +984,7 @@
                                         "Source": "    {Item.PenaltyPosStewards, Converter=NumberZeroToEmpty}    ",
                                         "HorizontalAlignment": "Center",
                                         "VerticalAlignment": "Center",
+                                        "RenderForce": true,   
                                         "TextOptions": {
                                                         "FontName": "{FontNameDefault}",
                                                         "FontSize": 28,
