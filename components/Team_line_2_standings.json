@@ -79,8 +79,8 @@
                         {
                             "BlockType": "text",
                             "HorizontalAlignment": "Center",
-                            "MarginLeft":5,
-                            "MarginTop": 57,
+                            "MarginLeft":0,
+                            "MarginTop": 55,
                             "Orientation": "Horizontal",
                             "Source": "{Item.Points}",
                             "TextAlignment": "Center",

@@ -64,8 +64,10 @@
                                     "HorizontalAlignment": "Left",
                                     "FontName": "{FontNameBold}",
                                     "Foreground": "{BlackText}",
-                                    "FontSize": 42
+                                    "FontSize": 35,
+                                    
                                 },
+                                
                             ]
                         }
                     ]
@@ -74,7 +76,7 @@
                 {
                     "BlockType": "Stack",
                     "Orientation": "Horizontal",
-                    "MarginLeft":20,
+                    "MarginLeft":0,
                     "MarginTop":0,
                     "Width": "*",
                     "Triggers": [

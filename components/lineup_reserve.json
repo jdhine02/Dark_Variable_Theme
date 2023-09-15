@@ -46,7 +46,7 @@
                                 },
                                 {
                                     "BlockType" : "image",
-                                    "Source" : "images/platform/platform_{Item.Driver.GamePlatform}.png",
+                                    "Source" : "images/logo_{Item.Driver.GamePlatform}.png",
                                     "Height" : 80,
                                     "MarginLeft" : 72,
                                     "MarginTop" : 15

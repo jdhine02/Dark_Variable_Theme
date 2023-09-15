@@ -15,6 +15,7 @@
             "PaddingRight" : 4,                           
             "HorizontalAlignment": "Center",
             "VerticalAlignment" : "Center",
+            "RenderForce": true, 
             "Spacing" : 4,            
             "Items" :[
                 {
