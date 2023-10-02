@@ -213,6 +213,7 @@
                                     "BlockType": "table",
                                     "HorizontalAlignment" : "Center",
                                     "RenderForce": true, 
+                                    "Background": "{CellBG}",
                                     "TableOptions": {
                                         "ItemsSource": "{Statistics.Drivers}",
                                         "RowSpacing": 12,
