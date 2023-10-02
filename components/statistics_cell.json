@@ -485,7 +485,7 @@
         { //battles pos and vs
         "BlockType" : "stack",
         "RenderIf" : false,
-        "Background": "CellBG",
+        "Background": "{CellBG}",
         "Width" : 55,
         "Height" : "*",
         "Triggers" : [
