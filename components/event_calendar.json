@@ -139,7 +139,7 @@
                             "Foreground": "{WhiteText}",
                             "FontName": "{FontNameDefault}",
                             "FontSize": 17,
-                            "MarginTop": 5,
+                            "MarginTop": 10,
                             "HorizontalAlignment":"Center",
                             "Source": "{Item.Description}",
                             "TextOptions" : 
@@ -161,7 +161,7 @@
                 {
                     "BlockType": "stack",
                     "Width": "*",
-                    "Height": 160,
+                    "Height": "750",
                     "Orientation": "Vertical",
                     "MarginLeft": -6,
                     "Items": [
@@ -220,7 +220,7 @@
                             "Source": "{Item.Track.CircuitFullName, converter=StringToUpperString}",
                             "TextOptions" : 
                             {
-                                "Wrap" : false
+                                "Wrap" : true
                             },
 
                             "Triggers": [
