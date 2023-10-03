@@ -1,7 +1,7 @@
 {
     "BlockType" : "stack",
     "Orientation" : "Vertical",
-    "Width" : 657,
+    "Width" : "657",
     "Height" : 955,
     "MarginBottom" : 150,
     "MarginTop": 100,
@@ -112,7 +112,27 @@
                         {
                             "BlockType" : "dock",
                             "Orientation" : "Horizontal",
+                            
                             "Items": [
+                                {
+                                    "BlockType" : "image",
+                                    "HorizontalAlignment" : "Right",
+                                    "Source" : "images/suit/{Item.Team.Name}_{Item.SeatPosition}.png",
+                                    "Width" : "500",
+                                    "MarginTop" : 60,
+                                    "Triggers" : [
+                                        {
+                                            "Condition" : "{F1Mode, Converter=BoolReverse}",
+                                            "Setters" : [
+                                                {
+                                                    "Property" : "Source",
+                                                    "Value" : "images/suit/{Item.Driver.Name}.png"
+                                                }
+                                            ]
+                                           
+                                        }
+                                    ]
+                                },
                                 {
                                     "BlockType" : "stack",
                                     "Orientation" : "Vertical",
@@ -157,25 +177,6 @@
                                         }
                                     ]
                                 },
-                                {
-                                    "BlockType" : "image",
-                                    "HorizontalAlignment" : "Right",
-                                    "Source" : "images/suit/{Item.Team.Name}_{Item.SeatPosition}.png",
-                                    "Width" : 500,
-                                    "MarginTop" : 60,
-                                    "Triggers" : [
-                                        {
-                                            "Condition" : "{F1Mode, Converter=BoolReverse}",
-                                            "Setters" : [
-                                                {
-                                                    "Property" : "Source",
-                                                    "Value" : "images/suit/{Item.Driver.Name}.png"
-                                                }
-                                            ]
-                                           
-                                        }
-                                    ]
-                                }
                             ]
                         },
                         {
