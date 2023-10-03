@@ -120,6 +120,7 @@
                                     "Source" : "images/suit/{Item.Team.Name}_{Item.SeatPosition}.png",
                                     "Width" : "500",
                                     "MarginTop" : 60,
+                                    "MarginRight" : 60,
                                     "Triggers" : [
                                         {
                                             "Condition" : "{F1Mode, Converter=BoolReverse}",
