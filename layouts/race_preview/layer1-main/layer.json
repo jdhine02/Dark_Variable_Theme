@@ -1,0 +1,296 @@
+{
+    "BlockRoot": {
+        "Name": "mainStack",
+        "BlockType": "stack",
+        "Margin": "{MarginRoot}",     
+        "Padding" : "24,12,24,12", 
+        "Orientation": "Vertical",
+        "Items": [
+            //header block
+            {
+                "BlockType" : "component",
+                "ComponentName" : "header_block_pre"
+            },
+
+            //separator
+            {
+                "Name" : "separator",
+                "BlockType": "image",
+                "MarginTop": 16,
+                "MarginLeft": 4,
+                "MarginRight": 4,
+                "MarginBottom": 24,
+                "Width": "*",
+                "Source": "separator.png"
+            },
+
+            //Preview Information
+            {
+                "BlockType": "stack",
+                "Orientation": "Horizontal",
+                "Width" : "{FIAMarginDetailsArea}", 
+                "Items": [
+                    //Left
+                    {
+                        "BlockType": "stack",
+                        "Orientation":"Vertical",
+                        "Spacing": 12,
+                        "Items": [
+                            //RD
+                            {
+                                "BlockType": "stack",
+                                "Orientation":"Horizontal",
+                                "Spacing": 12,
+                                "Items": [
+                                    {
+                                    "BlockType":"text",
+                                    "Source": "[Round]",
+                                    "Width": "PreviewWidth",
+                                    "FontName": "{FIAFontBold}",
+                                    "Foreground" : "{FIAText}",                                     
+                                    "FontSize": "30",
+                                    },
+                                    {
+                                        "BlockType":"text",
+                                        "Source": "{Event.Position}",
+                                        "FontName": "{FIAFont}",
+                                        "Foreground" : "{FIAText}",                                     
+                                        "FontSize": "30",
+                                        },
+                                ],
+                            },
+                            //Circuit
+                            {
+                                "BlockType": "stack",
+                                "VerticalAlignment": "Center",
+                                "HorizontalAlignment": "Left",
+                                "Orientation":"Horizontal",
+                                "Spacing": 12,
+                                "Items": [
+                                    {
+                                    "BlockType":"text",
+                                    "Source": "[Circuit]",
+                                    "FontName": "{FIAFontBold}",
+                                    "Foreground" : "{FIAText}",                                     
+                                    "FontSize": "30",
+                                    },
+                                    {
+                                        "BlockType":"text",
+                                        "Source": "{Session.Track.CircuitFullName}",
+                                        "FontName": "{FIAFont}",
+                                        "Foreground" : "{FIAText}",                                     
+                                        "FontSize": "30",
+                                    },
+                                ]
+                            },
+                            //Country
+                            {
+                                "BlockType": "stack",
+                                "VerticalAlignment": "Center",
+                                "HorizontalAlignment": "Left",
+                                "Orientation":"Horizontal",
+                                "Spacing": 12,
+                                "Items": [
+                                    {
+                                    "BlockType":"text",
+                                    "Source": "[Country]",
+                                    "FontName": "{FIAFontBold}",
+                                    "Foreground" : "{FIAText}",                                     
+                                    "FontSize": "30",
+                                    },
+                                    {
+                                        "BlockType":"text",
+                                        "Source": "{Session.Track.CountryName}",
+                                        "FontName": "{FIAFont}",
+                                        "Foreground" : "{FIAText}",                                     
+                                        "FontSize": "30",
+                                    },
+                                ]
+                            },
+                            //Length
+                            {
+                                "BlockType": "stack",
+                                "VerticalAlignment": "Center",
+                                "HorizontalAlignment": "Left",
+                                "Orientation":"Horizontal",
+                                "Spacing": 12,
+                                "Items": [
+                                    {
+                                    "BlockType":"text",
+                                    "Source": "[Length]",
+                                    "FontName": "{FIAFontBold}",
+                                    "Foreground" : "{FIAText}",                                     
+                                    "FontSize": "30",
+                                    },
+                                    {
+                                        "BlockType":"text",
+                                        "Source": "{Session.Track.Length}km",
+                                        "FontName": "{FIAFont}",
+                                        "Foreground" : "{FIAText}",                                     
+                                        "FontSize": "30",
+                                    },
+                                ]
+                            },
+                            //Laps
+                            {
+                                "BlockType": "stack",
+                                "VerticalAlignment": "Center",
+                                "HorizontalAlignment": "Left",
+                                "Orientation":"Horizontal",
+                                "Spacing": 12,
+                                "Items": [
+                                    {
+                                    "BlockType":"text",
+                                    "Width": "PreviewWidth",
+                                    "Source": "[Laps]",
+                                    "FontName": "{FIAFontBold}",
+                                    "Foreground" : "{FIAText}",                                     
+                                    "FontSize": "30",
+                                    },
+                                    {
+                                        "BlockType":"text",
+                                        "Source": "{Laps}",
+                                        "FontName": "{FIAFont}",
+                                        "Foreground" : "{FIAText}",                                     
+                                        "FontSize": "30",
+                                    },
+                                ]
+                            },
+                            //Turns
+                            {
+                                "BlockType": "stack",
+                                "VerticalAlignment": "Center",
+                                "HorizontalAlignment": "Left",
+                                "Orientation":"Horizontal",
+                                "Spacing": 12,
+                                "Items": [
+                                    {
+                                    "BlockType":"text",
+                                    "Width": "PreviewWidth",
+                                    "Source": "[Turns]",
+                                    "FontName": "{FIAFontBold}",
+                                    "Foreground" : "{FIAText}",                                     
+                                    "FontSize": "30",
+                                    },
+                                    {
+                                        "BlockType":"text",
+                                        "Source": "{Session.Track.NumberTurns}",
+                                        "FontName": "{FIAFont}",
+                                        "Foreground" : "{FIAText}",                                     
+                                        "FontSize": "30",
+                                    },
+                                ]
+                            },
+                            //DRS
+                            {
+                                "BlockType": "stack",
+                                "VerticalAlignment": "Center",
+                                "HorizontalAlignment": "Left",
+                                "Orientation":"Horizontal",
+                                "Spacing": 12,
+                                "Items": [
+                                    {
+                                    "BlockType":"text",
+                                    "Source": "[DRS Zones]",
+                                    "FontName": "{FIAFontBold}",
+                                    "Foreground" : "{FIAText}",                                     
+                                    "FontSize": "30",
+                                    },
+                                    {
+                                        "BlockType":"text",
+                                        "Source": "{DRS Zones}",
+                                        "FontName": "{FIAFont}",
+                                        "Foreground" : "{FIAText}",                                     
+                                        "FontSize": "30",
+                                    },
+                                ]
+                            },
+                            //Lap Record
+                            {
+                                "BlockType": "stack",
+                                "VerticalAlignment": "Center",
+                                "HorizontalAlignment": "Left",
+                                "Orientation":"Horizontal",
+                                "Spacing": 12,
+                                "Items": [
+                                    {
+                                    "BlockType":"text",
+                                    "Source": "[Lap Record]",
+                                    "FontName": "{FIAFontBold}",
+                                    "Foreground" : "{FIAText}",                                     
+                                    "FontSize": "30",
+                                    "TextOptions" : 
+                                    {
+                                        "Wrap" : true,
+                                    }
+                                    },
+                                    {
+                                        "BlockType": "stack",
+                                        "Orientation":"Vertical",
+                                        "Items":[                                            
+                                            {
+                                                "BlockType":"text",
+                                                "Source": "{Session.Track.RaceLapRecordDriverName} ({Lap Record Year})",
+                                                "FontName": "{FIAFont}",
+                                                "Foreground" : "{FIAText}",                                     
+                                                "FontSize": "30",
+                                            },
+                                            {
+                                                "BlockType":"text",
+                                                "Source": "{Session.Track.RaceLapRecordTime}",
+                                                "FontName": "{FIAFont}",
+                                                "Foreground" : "{FIAText}",                                     
+                                                "FontSize": "25",
+                                            },
+                                        ]
+                                    }
+                                ]
+                            },
+                            //Previous Winner
+                            {
+                                "BlockType": "stack",
+                                "VerticalAlignment": "Center",
+                                "HorizontalAlignment": "Left",
+                                "Orientation":"Horizontal",
+                                "Spacing": 12,
+                                "Items": [
+                                    {
+                                    "BlockType":"text",
+                                    "Source": "[Previous Winner]",
+                                    "FontName": "{FIAFontBold}",
+                                    "Foreground" : "{FIAText}",                                     
+                                    "FontSize": "30",
+                                    "TextOptions" : 
+                                    {
+                                        "Wrap" : true,
+                                        "TextAlignment": "Center",
+                                    }
+                                    },
+                                    {
+                                        "BlockType":"text",
+                                        "Source": "{Previous Winner}",
+                                        "FontName": "{FIAFont}",
+                                        "Foreground" : "{FIAText}",                                     
+                                        "FontSize": "30",
+                                    },
+                                ]
+                            },
+                        ]
+                    },
+                    //Right
+                    {
+                            "BlockType": "image",
+                            "VerticalAlignment": "Center",
+                            "HorizontalAlignment": "Right",
+                            "MarginTop": 20,
+                            "MarginLeft": 200,
+                            //"Width": 100,
+                            "Height": 500,
+                            "Opacity": 20,
+                            "Source": "images/Modern/Track/{Session.Track.CircuitName}.png"
+                    },
+                ]
+            },
+        ]
+    }
+}
