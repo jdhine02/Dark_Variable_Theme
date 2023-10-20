@@ -3,94 +3,101 @@
     "BlockType": "dock",
     "Orientation": "Horizontal",
     "Items": [
-                    //header
+                    //Left
                     {
-                        "Name": "headerLeftPart",
-                        "BlockType": "stack",
-                        "Orientation": "Vertical",
+                        "BlockType": "Itemstack",
+                        "Orientation":"Vertical",
                         "Spacing": 12,
-                        "HorizontalAlignment": "Center",
-                        "Items": [
-                            //league name
-                            {
-                                "BlockType": "stack",
-                                "VerticalAlignment": "Center",
-                                "HorizontalAlignment": "Center",
-                                "Items": [
+                        "ItemStackOptions" : {
+                            "ItemSource" : "{Events.Events}",
+                            "IndexStart" : "{Season.SeasonCurrentNumberEvent}",
+                            "Limit": 1,
+                            "Template" : {
+                                "BlockType" : "stack",
+                                "Orientation" : "Vertical",
+                                "HorizontalAlignment" : "Left",
+                                "Items" : [
+                                    //league name
+                                    {
+                                        "BlockType": "stack",
+                                        "VerticalAlignment": "Center",
+                                        "HorizontalAlignment": "Center",
+                                        "Items": [
+                                                    {
+                                                        "BlockType": "text",
+                                                        "Source": "{Season.LeagueInfo.LeagueName}",
+                                                        "VerticalAlignment": "Center",
+                                                        "FontName": "{FIAFontWide}",
+                                                        "MarginLeft":12,
+                                                        "Foreground":"{FIAText}",
+                                                        "FontSize": 35
+                                                    },
+                                                    {
+                                                        "BlockType": "text",
+                                                        "Source": "{Season.Name}",
+                                                        "MarginLeft":12,
+                                                        "MarginTop": 2,
+                                                        "VerticalAlignment": "Center",
+                                                        "FontName": "{FIAFontWide}",
+                                                        "FontSize": 30,
+                                                        "Foreground": "{FIAText}"
+                                                    }
+                                        ]
+                                    },
+                                    //Preview
+                                    {
+                                        "Name": "headerItemLine",
+                                        "BlockType": "stack",
+                                        "VerticalAlignment": "Center",
+                                        "HorizontalAlignment": "Center",
+                                        "Orientation": "Vertical",
+                                        "Spacing": 8,
+                                        "Items": [
+
                                             {
+                                                "Name": "CountryName",
                                                 "BlockType": "text",
-                                                "Source": "{Season.LeagueInfo.LeagueName}",
+                                                "MarginLeft": 12,
                                                 "VerticalAlignment": "Center",
+                                                "Source": "[Race Preivew]",
+                                                "TextOptionsExtern": "CountryName",
                                                 "FontName": "{FIAFontWide}",
-                                                "MarginLeft":12,
-                                                "Foreground":"{FIAText}",
+                                                "Foreground":"{FIAGrandPrix}",
                                                 "FontSize": 35
                                             },
+                                        ]
+                                    },
+                                    //Item
+                                    {
+                                        "Name": "headerItemLine",
+                                        "BlockType": "stack",
+                                        "VerticalAlignment": "Center",
+                                        "HorizontalAlignment": "Center",
+                                        "Orientation": "Vertical",
+                                        "Spacing": 8,
+                                        "Items": [
+
                                             {
+                                                "Name": "CountryName",
                                                 "BlockType": "text",
-                                                "Source": "{Season.Name}",
-                                                "MarginLeft":12,
-                                                "MarginTop": 2,
+                                                "MarginLeft": 12,
                                                 "VerticalAlignment": "Center",
+                                                "Source": "[{Item.Track.CircuitFullName, converter=StringToUpperString} GRAND PRIX]",
+                                                "TextOptionsExtern": "CountryName",
                                                 "FontName": "{FIAFontWide}",
+                                                "Foreground":"{FIAText}",
                                                 "FontSize": 30,
-                                                "Foreground": "{FIAText}"
-                                            }
-                                ]
-                            },
-                            //Preview
-                            {
-                                "Name": "headerSessionLine",
-                                "BlockType": "stack",
-                                "VerticalAlignment": "Center",
-                                "HorizontalAlignment": "Center",
-                                "Orientation": "Vertical",
-                                "Spacing": 8,
-                                "Items": [
-
-                                    {
-                                        "Name": "CountryName",
-                                        "BlockType": "text",
-                                        "MarginLeft": 12,
-                                        "VerticalAlignment": "Center",
-                                        "Source": "[Race Preivew]",
-                                        "TextOptionsExtern": "CountryName",
-                                        "FontName": "{FIAFontWide}",
-                                        "Foreground":"{FIAText}",
-                                        "FontSize": 35
-                                    },
-                                ]
-                            },
-                            //session
-                            {
-                                "Name": "headerSessionLine",
-                                "BlockType": "stack",
-                                "VerticalAlignment": "Center",
-                                "HorizontalAlignment": "Center",
-                                "Orientation": "Vertical",
-                                "Spacing": 8,
-                                "Items": [
-
-                                    {
-                                        "Name": "CountryName",
-                                        "BlockType": "text",
-                                        "MarginLeft": 12,
-                                        "VerticalAlignment": "Center",
-                                        "Source": "[{Session.Track.CircuitName, converter=StringToUpperString} GRAND PRIX]",
-                                        "TextOptionsExtern": "CountryName",
-                                        "FontName": "{FIAFontWide}",
-                                        "Foreground":"{FIAGrandPrix}",
-                                        "FontSize": 30,
-                                        "TextOptions" : 
-                                        {
-                                            "Wrap" : true,
-                                            "TextAlignment": "Center",
-                                        }
-                                    },
+                                                "TextOptions" : 
+                                                {
+                                                    "Wrap" : true,
+                                                    "TextAlignment": "Center",
+                                                }
+                                            },
+                                        ]
+                                    }
                                 ]
                             }
-                        ]
+                        }
                     }
                 ]
             }
-                       
