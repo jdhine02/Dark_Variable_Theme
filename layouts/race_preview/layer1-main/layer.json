@@ -246,6 +246,13 @@
                                                         "FontName": "{FIAFont}",
                                                         "Foreground" : "{FIAText}",                                     
                                                         "FontSize": "30",
+                                                        [
+                                                            {
+                                                                "Condition" : "{Item.Team.Name, Converter=EmptyObjectToTrue}",
+                                                                "Property" : "Source",
+                                                                "Value" : "N/A"
+                                                            },
+                                                        ]
                                                     },
                                                     {
                                                         "BlockType":"text",
@@ -253,6 +260,13 @@
                                                         "FontName": "{FIAFontBold}",
                                                         "Foreground" : "{FIAText}",                                     
                                                         "FontSize": "25",
+                                                        [
+                                                            {
+                                                                "Condition" : "{Item.Team.Name, Converter=EmptyObjectToTrue}",
+                                                                "Property" : "Source",
+                                                                "Value" : ""
+                                                            },
+                                                        ]
                                                     },
                                                 ]
                                             }
@@ -286,6 +300,14 @@
                                                 "FontName": "{FIAFont}",
                                                 "Foreground" : "{FIAText}",                                     
                                                 "FontSize": "30",
+                                                "Triggers":
+                                                [
+                                                    {
+                                                        "Condition" : "{Item.Team.Name, Converter=EmptyObjectToTrue}",
+                                                        "Property" : "Source",
+                                                        "Value" : "N/A"
+                                                    },
+                                                ]
                                             },
                                         ]
                                     },
