@@ -13,6 +13,7 @@
     "HeaderForeground" : "#ffffff",
     "MarginRoot" : "64, 40, 48, 40",
     "MarginTable" : "0, 0",
+    "PreviewWidth" : "200",
 
     //Stints
     "FontSizeRightPart" : "30",

@@ -25,10 +25,14 @@
   "RenderPenaltySeparator": true,
   "RenderPenaltyVerdict": false,
   "DriverNameFontSizeOnLineup": 45,
-  "SecondCalendarEventsInColumn": 6,
+  "SecondCalendarEventsInColumn": 13,
   "TeamNumberToCompare": 9,
   "SeasonSeatPerTeam": 2,
-  "Streamer": "Phat",
+  "Streamer": "Hines",
   "SecondCommentator": "",
-  "StewardReportType": "Report"
+  "StewardReportType": "Report",
+  "Laps": "28",
+  "DRS Zones": "2",
+  "Previous Winner":"JonC",
+  "Lap Record Year": "2023"
 }
