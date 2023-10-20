@@ -43,6 +43,7 @@
                                 "BlockType" : "stack",
                                 "Orientation" : "Vertical",
                                 "HorizontalAlignment" : "Left",
+                                "MarginTop": 75,
                                 "Items" : [
                                     //RD
                                     {
@@ -246,9 +247,10 @@
                                                         "FontName": "{FIAFont}",
                                                         "Foreground" : "{FIAText}",                                     
                                                         "FontSize": "30",
+                                                        "Triggers":
                                                         [
                                                             {
-                                                                "Condition" : "{Item.Team.Name, Converter=EmptyObjectToTrue}",
+                                                                "Condition" : "{Item.Track.RaceLapRecordDriverName, Converter=EmptyObjectToTrue}",
                                                                 "Property" : "Source",
                                                                 "Value" : "N/A"
                                                             },
@@ -260,9 +262,10 @@
                                                         "FontName": "{FIAFontBold}",
                                                         "Foreground" : "{FIAText}",                                     
                                                         "FontSize": "25",
+                                                        "Triggers":
                                                         [
                                                             {
-                                                                "Condition" : "{Item.Team.Name, Converter=EmptyObjectToTrue}",
+                                                                "Condition" : "{Item.Track.RaceLapRecordTime, Converter=EmptyObjectToTrue}",
                                                                 "Property" : "Source",
                                                                 "Value" : ""
                                                             },
@@ -303,7 +306,7 @@
                                                 "Triggers":
                                                 [
                                                     {
-                                                        "Condition" : "{Item.Team.Name, Converter=EmptyObjectToTrue}",
+                                                        "Condition" : "{PreviousWinner, Converter=EmptyObjectToTrue}",
                                                         "Property" : "Source",
                                                         "Value" : "N/A"
                                                     },
@@ -329,11 +332,165 @@
                                 "Orientation" : "Vertical",
                                 "HorizontalAlignment" : "Left",
                                 "Items" : [
-                                    //Image
+                                    
+                                    //Tyres
+                                    {
+                                    "BlockType" : "stack",
+                                    "Orientation" : "Vertical",
+                                    "HorizontalAlignment" : "Center",
+                                    "Items":[
+                                        {
+                                            "BlockType":"text",
+                                            "Source": "{Available Compounds}",
+                                            "Width": 500,
+                                            "VerticalAlignment": "Center",
+                                            "HorizontalAlignment" : "Center",
+                                            "MarginLeft": 100,
+                                            "FontName": "{FIAFont}",
+                                            "Foreground" : "{FIAText}",                                     
+                                            "FontSize": "30",
+                                        },
+                                        {
+                                            "BlockType" : "stack",
+                                            "Orientation" : "Horizontal",
+                                            "HorizontalAlignment" : "Center",
+                                            "Items":[
+                                                {
+                                                    "BlockType": "image",
+                                                    "VerticalAlignment": "Center",
+                                                    "HorizontalAlignment": "Center",
+                                                    "MarginTop": 10,
+                                                    "MarginLeft": 50,
+                                                    //"Width": 100,
+                                                    "Height": 50,
+                                                    "Opacity": 100,
+                                                    "Source": "images/pit/pit_soft.png"
+                                                },
+                                                {
+                                                    "BlockType": "image",
+                                                    "VerticalAlignment": "Center",
+                                                    "HorizontalAlignment": "Center",
+                                                    "MarginTop": 10,
+                                                    "MarginLeft": 50,
+                                                    //"Width": 100,
+                                                    "Height": 50,
+                                                    "Opacity": 100,
+                                                    "Source": "images/pit/pit_medium.png"
+                                                },
+                                                {
+                                                    "BlockType": "image",
+                                                    "VerticalAlignment": "Center",
+                                                    "HorizontalAlignment": "Center",
+                                                    "MarginTop": 10,
+                                                    "MarginLeft": 50,
+                                                    //"Width": 100,
+                                                    "Height": 50,
+                                                    "Opacity": 100,
+                                                    "Source": "images/pit/pit_hard.png"
+                                                },
+                                                {
+                                                    "BlockType": "image",
+                                                    "VerticalAlignment": "Center",
+                                                    "HorizontalAlignment": "Center",
+                                                    "MarginTop": 10,
+                                                    "MarginLeft": 50,
+                                                    //"Width": 100,
+                                                    "Height": 50,
+                                                    "Opacity": 100,
+                                                    "Source": "images/pit/pit_intermediate.png"
+                                                },
+                                                {
+                                                    "BlockType": "image",
+                                                    "VerticalAlignment": "Center",
+                                                    "HorizontalAlignment": "Center",
+                                                    "MarginTop": 10,
+                                                    "MarginLeft": 50,
+                                                    //"Width": 100,
+                                                    "Height": 50,
+                                                    "Opacity": 100,
+                                                    "Source": "images/pit/pit_wet.png"
+                                                }
+                                            ],
+                                            "RenderIf": "{RenderAllCompounds}"
+                                    },
+                                    {
+                                        "BlockType" : "stack",
+                                        "Orientation" : "Horizontal",
+                                        "HorizontalAlignment" : "Center",
+                                        "Items":[
+                                            {
+                                                "BlockType": "image",
+                                                "VerticalAlignment": "Center",
+                                                "HorizontalAlignment": "Center",
+                                                "MarginTop": 10,
+                                                "MarginLeft": 50,
+                                                //"Width": 100,
+                                                "Height": 50,
+                                                "Opacity": 100,
+                                                "Source": "images/pit/pit_soft.png"
+                                            },
+                                            {
+                                                "BlockType": "image",
+                                                "VerticalAlignment": "Center",
+                                                "HorizontalAlignment": "Center",
+                                                "MarginTop": 10,
+                                                "MarginLeft": 50,
+                                                //"Width": 100,
+                                                "Height": 50,
+                                                "Opacity": 100,
+                                                "Source": "images/pit/pit_medium.png"
+                                            },
+                                            {
+                                                "BlockType": "image",
+                                                "VerticalAlignment": "Center",
+                                                "HorizontalAlignment": "Center",
+                                                "MarginTop": 10,
+                                                "MarginLeft": 50,
+                                                //"Width": 100,
+                                                "Height": 50,
+                                                "Opacity": 100,
+                                                "Source": "images/pit/pit_hard.png"
+                                            },
+                                        ],
+                                        "RenderIf": "{RenderDry}"
+                                    },
+                                    {
+                                        "BlockType" : "stack",
+                                        "Orientation" : "Horizontal",
+                                        "HorizontalAlignment" : "Center",
+                                        "Items":[
+                                            {
+                                                "BlockType": "image",
+                                                "VerticalAlignment": "Center",
+                                                "HorizontalAlignment": "Center",
+                                                "MarginTop": 10,
+                                                "MarginLeft": 50,
+                                                //"Width": 100,
+                                                "Height": 50,
+                                                "Opacity": 100,
+                                                "Source": "images/pit/pit_intermediate.png"
+                                            },
+                                            {
+                                                "BlockType": "image",
+                                                "VerticalAlignment": "Center",
+                                                "HorizontalAlignment": "Center",
+                                                "MarginTop": 10,
+                                                "MarginLeft": 50,
+                                                //"Width": 100,
+                                                "Height": 50,
+                                                "Opacity": 100,
+                                                "Source": "images/pit/pit_wet.png"
+                                            }
+                                        ],
+                                        "RenderIf": "{RenderWet}"
+                                }
+                                    ]
+                                    },
+                                    //Track Image
                                     {
                                             "BlockType": "image",
                                             "VerticalAlignment": "Center",
-                                            "HorizontalAlignment": "Right",
+                                            "HorizontalAlignment": "Center",
                                             "MarginTop": 20,
                                             "MarginLeft": 50,
                                             //"Width": 100,
