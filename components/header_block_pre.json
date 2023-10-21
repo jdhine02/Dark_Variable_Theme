@@ -7,6 +7,7 @@
                     {
                         "BlockType": "Itemstack",
                         "Orientation":"Vertical",
+                        "HorizontalAlignment" : "Center",
                         "Spacing": 12,
                         "ItemStackOptions" : {
                             "ItemSource" : "{Events.Events}",
@@ -15,7 +16,7 @@
                             "Template" : {
                                 "BlockType" : "stack",
                                 "Orientation" : "Vertical",
-                                "HorizontalAlignment" : "Left",
+                                "HorizontalAlignment" : "Center",
                                 "Items" : [
                                     //league name
                                     {
@@ -59,7 +60,7 @@
                                                 "BlockType": "text",
                                                 "MarginLeft": 12,
                                                 "VerticalAlignment": "Center",
-                                                "Source": "[Race Preivew]",
+                                                "Source": "[Race Preview]",
                                                 "TextOptionsExtern": "CountryName",
                                                 "FontName": "{FIAFontWide}",
                                                 "Foreground":"{FIAGrandPrix}",
@@ -82,7 +83,7 @@
                                                 "BlockType": "text",
                                                 "MarginLeft": 12,
                                                 "VerticalAlignment": "Center",
-                                                "Source": "[{Item.Track.CircuitFullName, converter=StringToUpperString} GRAND PRIX]",
+                                                "Source": "[{Item.Track.CircuitName, converter=StringToUpperString} GRAND PRIX]",
                                                 "TextOptionsExtern": "CountryName",
                                                 "FontName": "{FIAFontWide}",
                                                 "Foreground":"{FIAText}",
