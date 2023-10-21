@@ -31,11 +31,13 @@
   "SecondCalendarEventsInColumn": 13,
   "TeamNumberToCompare": 9,
   "SeasonSeatPerTeam": 2,
-  "Streamer": "Hines",
-  "SecondCommentator": "",
-  "StewardReportType": "Report",
+  "ForecastWeather": "random",
   "Laps": "36",
   "DRSZones": "3",
   "PreviousWinner": "JonC",
-  "LapRecordYear": "2023"
+  "LapRecordYear": "2023",
+  "StewardReportType": "Report",
+  "Streamer": "Hines",
+  "SecondCommentator": "",
+
 }
