@@ -135,7 +135,7 @@
                                             },
                                             {
                                                 "BlockType":"text",
-                                                "Source": "{Item.Track.Length}km",
+                                                "Source": "{Item.Track.Length, Converter=NumberGroupWithSeparator, Parameter=.}km",
                                                 "FontName": "{FIAFont}",
                                                 "Foreground" : "{FIAText}",                                     
                                                 "FontSize": "30",
@@ -241,23 +241,46 @@
                                                 "BlockType": "stack",
                                                 "Orientation":"Vertical",
                                                 "Items":[                                            
-                                                    {
-                                                        "BlockType":"text",
-                                                        "Source": "{Item.Track.RaceLapRecordDriverName} ({LapRecordYear})",
-                                                        "FontName": "{FIAFont}",
-                                                        "Foreground" : "{FIAText}",                                     
-                                                        "FontSize": "30",
-                                                        "Triggers":
-                                                        [
+                                                   { 
+                                                        "BlockType": "stack",
+                                                        "Orientation":"Horizontal",
+                                                        "Items":[                                            
                                                             {
-                                                                "Condition" : "{Item.Track.RaceLapRecordDriverName, Converter=EmptyObjectToTrue}",
-                                                                "Property" : "Source",
-                                                                "Value" : "N/A"
+                                                                "BlockType":"text",
+                                                                "Source": "{Item.Track.RaceLapRecordDriverName}",
+                                                                "FontName": "{FIAFont}",
+                                                                "Foreground" : "{FIAText}",                                     
+                                                                "FontSize": "30",
+                                                                "Triggers":
+                                                                [
+                                                                    {
+                                                                        "Condition" : "{Item.Track.RaceLapRecordDriverName, Converter=EmptyObjectToTrue}",
+                                                                        "Property" : "Source",
+                                                                        "Value" : "N/A"
+                                                                    },
+                                                                ]
                                                             },
+                                                            {
+                                                                "BlockType":"text",
+                                                                "VerticalAlignment": "Center",
+                                                                "Source": " ({LapRecordYear})",
+                                                                "FontName": "{FIAFont}",
+                                                                "Foreground" : "{FIAText}",                                     
+                                                                "FontSize": "25",
+                                                                "Triggers":
+                                                                [
+                                                                    {
+                                                                        "Condition" : "{Item.Track.RaceLapRecordDriverName, Converter=EmptyObjectToTrue}",
+                                                                        "Property" : "Source",
+                                                                        "Value" : "N/A"
+                                                                    },
+                                                                ]
+                                                            }
                                                         ]
                                                     },
                                                     {
                                                         "BlockType":"text",
+                                                        "MarginTop": 5,
                                                         "Source": "{Item.Track.RaceLapRecordTime}",
                                                         "FontName": "{FIAFontBold}",
                                                         "Foreground" : "{FIAText}",                                     
