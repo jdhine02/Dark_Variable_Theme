@@ -144,7 +144,7 @@
             {
                 "Condition" : "{HorizontalLineups}",
                 "Property" : "MarginRight",
-                "Value" : "-200"
+                "Value" : "60"
             }
         ]
     }

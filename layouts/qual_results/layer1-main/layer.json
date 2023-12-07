@@ -60,7 +60,7 @@
                                         "Condition" : "{Item.IntervalRace, Converter=StringEquals, Parameter=DSQ}",
                                         "ConditionAnd" : "{RenderDNFColors}",
                                         "Property" : "Foreground",
-                                        "Value" : "{FerrariPrimary}"
+                                        "Value" : "{DNFText}"
                                    },
                                    {
                                     "Condition" : "{Item.IntervalRace, Converter=StringEquals, Parameter=DNS}",
@@ -125,7 +125,7 @@
                                                 "Condition" : "{Item.IntervalRace, Converter=StringEquals, Parameter=DSQ}",
                                                 "ConditionAnd" : "{RenderDNFColors}",
                                                 "Property" : "Foreground",
-                                                "Value" : "{FerrariPrimary}"
+                                                "Value" : "{DNFText}"
                                            },
                                            {
                                             "Condition" : "{Item.IntervalRace, Converter=StringEquals, Parameter=DNS}",
@@ -182,7 +182,7 @@
                                         "Condition" : "{Item.IntervalRace, Converter=StringEquals, Parameter=DSQ}",
                                         "ConditionAnd" : "{RenderDNFColors}",
                                         "Property" : "Foreground",
-                                        "Value" : "{FerrariPrimary}"
+                                        "Value" : "{DNFText}"
                                    },
                                    {
                                     "Condition" : "{Item.IntervalRace, Converter=StringEquals, Parameter=DNS}",
@@ -226,7 +226,7 @@
                                         "Condition" : "{Item.IntervalRace, Converter=StringEquals, Parameter=DSQ}",
                                         "ConditionAnd" : "{RenderDNFColors}",
                                         "Property" : "Foreground",
-                                        "Value" : "{FerrariPrimary}"
+                                        "Value" : "{DNFText}"
                                    },
                                    {
                                     "Condition" : "{Item.IntervalRace, Converter=StringEquals, Parameter=DNS}",
@@ -270,7 +270,7 @@
                                         "Condition" : "{Item.IntervalRace, Converter=StringEquals, Parameter=DSQ}",
                                         "ConditionAnd" : "{RenderDNFColors}",
                                         "Property" : "Foreground",
-                                        "Value" : "{FerrariPrimary}"
+                                        "Value" : "{DNFText}"
                                    },
                                    {
                                     "Condition" : "{Item.IntervalRace, Converter=StringEquals, Parameter=DNS}",
